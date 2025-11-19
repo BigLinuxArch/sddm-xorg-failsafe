@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=sddm-xorg-failsafe
+
+if [ "$(ps -e | grep Xbig)" != "" ] && [ "$(cat /tmp/BIGLINUX_XORG_VERIFY_FAIL)" = "1" ]; then
+
+    sleep 10
+
+    kdialog --title $"Xorg in Compatibility Mode" --error $"There was a problem with the video driver.
+
+The system is using compatibility mode.
+
+Do not worry, this only makes the system run slower,
+especially for games and programs that use 3D resources.
+
+Check the video drivers and kernel version."
+
+fi
+

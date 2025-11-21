@@ -1,8 +1,8 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 
 pkgname=sddm-xorg-failsafe
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=24.11.11
+pkgrel=1804
 arch=('any')
 url="https://github.com/biglinux/sddm-xorg-failsafe"
 pkgdesc="Use fbdev in xorg if default driver fail"
